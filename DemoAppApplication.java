@@ -20,4 +20,16 @@ public class DemoAppApplication {
 
 
 
-/
+// Laptop.java
+
+package com.example1.demoApp;
+
+import org.springframework.stereotype.Component;
+
+@Component //which tell to the IOC to create the object of this class also
+public class Laptop {
+    public void compile(){
+        System.out.println("this is the method of the Laptop class ");
+    }
+}
+
