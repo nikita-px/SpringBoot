@@ -32,6 +32,8 @@ public class Main {
         Dev obj= (Dev) context.getBean("dev");
 
         obj.setAge(87); //------------> you can set the value 
+    }
+}
 
         System.out.println(obj.getAge()); // ------------> This Function is used to get the value 
     }
