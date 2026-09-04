@@ -21,3 +21,18 @@ public class Dev {
         System.out.println("working project of the dev class ...");
     }
 }
+
+//main.java -----------> file 
+
+public class Main {
+    static void main() {
+
+        // BeanFactory ------------->
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        Dev obj= (Dev) context.getBean("dev");
+
+        obj.setAge(87); //------------> you can set the value 
+
+        System.out.println(obj.getAge()); // ------------> This Function is used to get the value 
+    }
+}
