@@ -20,3 +20,34 @@ public class Main {
 
 //Dev.java 
 
+package org.example;
+
+public class Dev {
+
+
+    private int age=90; //assign the value here
+    //constructor
+
+    public Dev(){
+        System.out.println("this is the constructor of the class Dev ");
+    }
+
+    public Dev(int age) { //here is the parameterized constructor are created 
+        //and it value ia assign in the spring.xml file underthe attribute the constructor-arg
+        this.age = age;
+        System.out.println("age value by the constructor injection");
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    //method
+    public void build(){
+        System.out.println("working project of the dev class ...");
+    }
+}
