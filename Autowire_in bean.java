@@ -11,7 +11,6 @@ public class Desktop implements Computer{
     public void complie(){
         System.out.println("this the compile method of the Desktop.........");
     }
-
 }
 
 //Laptop.java --------> file 
