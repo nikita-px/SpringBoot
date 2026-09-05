@@ -2,7 +2,6 @@
 package org.example;
 
 public class Desktop implements Computer{
-
     //create the two method
 
     public Desktop (){
