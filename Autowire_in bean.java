@@ -141,7 +141,8 @@ public class Main {
 
     <bean id="dev" class="org.example.Dev" autowire="byName"> // you can autowire the object by using the autowire attribute 
                                                               //in which you can autowire it using the ByType and Byname also 
-                                                              // if their is the confussion between the type and the name -----------> 
+                                                              // if their is the confussion between the type and the name -----------> then we can used 
+                                                              // primary attribute vakue is true which can help to avoid the confussion
 <!--        <property name="age" value="36"/>-->
 
         <property name="com" ref="com"/>
