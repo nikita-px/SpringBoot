@@ -88,3 +88,47 @@ public class Dev implements Computer {
     }
 }
 
+//Main.java
+
+package org.example;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    static void main() {
+
+        // BeanFactory ------------->
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        Dev obj= (Dev) context.getBean("dev");
+
+        //System.out.println(obj.getAge()); //---------> acess the default value of the age from the dev class
+        //obj.build();
+
+        // now to create the Spring configuration ---------> just simply create the  folder of name resources
+        // RC on the main
+        // new ---> Directory---->name as the res
+        // res----->RC --------> click on the file ------>  name it as the ----> spring.xml
+        //where we have to write the some connfiguration here
+        //for this configuration  ---> Every class which manage by the Spring are called as the ----> Bean
+        // that thinks you have to define in the Spring.xml file
+
+//        Now here you have to write the code for that bean factory
+//
+//                html tag are understand by the browser
+//                but in xml you can used your own tag
+
+         // Now when you have to the inject some value with the help of the Spring Boot
+        // Then you have to make changes in the spring.xml
+        // in the class bean tag where you can define itt properties and then assign the value
+        // it has to attribute which is the name and the value
+
+    }
+}
+
+//Spring.xml
+
+
+
