@@ -11,3 +11,29 @@ public class DemosSimpleWebApplication {
     }
 
 }
+
+//HomeController.java 
+
+package com.example_of_simple_web_app.demos_simple_web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController // which is used to help to provide  the service to navigate the content to the server
+public class HomeController {
+    @RequestMapping("/") // which is used to handel the http request
+    public String greet(){
+        return "hello ! Nikita ";
+    }
+
+    @RequestMapping("/about") // which can be execute when their is the--------> localhost:8081/about----> written in the url
+    public String about(){
+        return "we can Educate the people!!!!";
+    }
+}
+
+
+
+
+
