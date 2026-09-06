@@ -53,4 +53,26 @@ public class LoginController {
 }
 
 
+//ProductController.java
+
+
+package com.example_of_simple_web_app.demos_simple_web.controller;
+
+import com.example_of_simple_web_app.demos_simple_web.model.Product;
+import com.example_of_simple_web_app.demos_simple_web.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+@RestController
+public class ProductController {
+    @Autowired
+    ProductService service;
+    @RequestMapping
+    public List <Product> getproduct(){
+        return service.getProduct();
+    }
+}
+
 
