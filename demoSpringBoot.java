@@ -33,7 +33,24 @@ public class HomeController {
     }
 }
 
+//LoginController.java
 
+package com.example_of_simple_web_app.demos_simple_web;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class LoginController {
+    @RequestMapping("/login") // which is execute automatically whe their is the ----> /login will be return in the url
+
+    // Note :
+    // That we dont need to tell the main class that when they have to execute which class
+    // All this can be handle by the Front Controller -------> itslef 
+    public String login(){
+        return "This is the Login Page !!";
+    }
+}
 
 
 
