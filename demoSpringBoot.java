@@ -76,3 +76,60 @@ public class ProductController {
 }
 
 
+//Product.java
+
+package com.example_of_simple_web_app.demos_simple_web.model;
+
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
+
+//import lombok.Data;
+//import org.springframework.stereotype.Component;
+//
+//@Data // which is used with the help of lombok dependency ----->
+// 1.maven repository
+// 2.search for --->lombok
+// add dependency in pom.xml
+// reload the file
+@AllArgsConstructor
+@Component
+public class Product {
+    private int prodId;
+    private String prodName;
+    private int price;
+
+    public Product() {
+    }
+
+    public Product(int prodId, int price, String prodName) {
+        this.prodId = prodId;
+        this.price = price;
+        this.prodName = prodName;
+    }
+
+    public int getProdId() {
+        return prodId;
+    }
+
+    public void setProdId(int prodId) {
+        this.prodId = prodId;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getProdName() {
+        return prodName;
+    }
+
+    public void setProdName(String prodName) {
+        this.prodName = prodName;
+    }
+}
+
+
