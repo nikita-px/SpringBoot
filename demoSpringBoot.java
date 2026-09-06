@@ -1,17 +1,3 @@
-package com.example_of_simple_web_app.demos_simple_web;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class DemosSimpleWebApplication {
-
-    public static void main(String[] args) {
-       SpringApplication.run(DemosSimpleWebApplication.class, args);
-    }
-
-}
-
 //HomeController.java 
 
 package com.example_of_simple_web_app.demos_simple_web;
@@ -156,3 +142,35 @@ public class ProductService {
     }
 }
 
+
+//DemosSimpleWebApplication.java
+
+package com.example_of_simple_web_app.demos_simple_web;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemosSimpleWebApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemosSimpleWebApplication.class, args);
+
+		//1. Create the HomeControler.java file ===> @RestController at the top of the class ==>@RequestMapping at the top of method
+		//2. Add some methods their
+		//3. Create the LoginController.java file ===> Same as for the Login also
+		//4. Having the function name as login
+		//5. Create the ProductController.java
+		//6. Create the another file Product.java
+		//7. Now Go to maven repository ---> search for lombok ---> and add dependency ---> and reload
+		//7. Which contain some variable --- such as productname, price , and product id ---> Add ---> @Data at the top of the class
+		//8. Now Create the Another file name as the ProductService
+		//9. Create the interface by RC in package add name under which you are creating the package
+		//10. and move all the Controller file into pacakage
+		//11. now same create the package ---> for the service ---> and move the service file into it
+		//12. now create the model --> package ---> and move the Product into it
+		//13. Add the content
+		//14.
+	}
+
+}
